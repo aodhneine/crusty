@@ -1,5 +1,5 @@
-CC ?= clang
-CFLAGS = -O2 -Wall -Wextra -Wpedantic
+CC ?= clean
+CFLAGS = -O2 -Wall -Wextra -Wpedantic -std=c89
 
 crusty: crusty.c
 	$(CC) $^ -o $@ $(CFLAGS)
