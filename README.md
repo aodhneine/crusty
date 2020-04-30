@@ -12,7 +12,7 @@ $ ./crusty examples/main.rs
 ## Dependencies
 C89 compiler and make.
 
-<hr/>
+## Remarks
 
-> Is it a joke?
-> > No.
+Is it a joke?
+> No.
