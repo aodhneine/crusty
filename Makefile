@@ -16,4 +16,4 @@ linux-x86_64-elf.o: linux-x86_64-elf.nasm
 
 .PHONY: clean
 clean:
-	rm -f crusty 
+	rm -f crusty
