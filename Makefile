@@ -12,7 +12,7 @@ stub.o: stub
 	$(LD) -r -b binary stub -o stub.o
 
 stub: stub.c
-	$(CC) stub.c -o stub -O3 -std=c99
+	$(CC) stub.c -o stub -Os -std=c99 -s
 
 .PHONY: clean
 clean:
