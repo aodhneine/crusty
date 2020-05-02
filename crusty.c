@@ -20,6 +20,8 @@ int main(int argc, char **argv) {
   const char *stub_start = &_binary_stub_start;
   const char *stub_end = &_binary_stub_end;
 
+  FILE *source = fopen(argv[1], "r");
+
   FILE *output = fopen("main", "wb");
   fwrite(stub_start, stub_end - stub_start, 1, output);
   fclose(output);
@@ -30,6 +32,8 @@ int main(int argc, char **argv) {
     fprintf(stderr, "[1;31minternal error[0m: failed to chmod main\n");
     return 1;
   }
+
+  fclose(source);
 
   return 0;
 }
